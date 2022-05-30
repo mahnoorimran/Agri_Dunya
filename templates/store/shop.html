@@ -1,0 +1,40 @@
+{% extends 'main.html'%}
+{% load static %}
+{% block content %}
+
+<!-- Form Add items -->
+<div class="content">
+    
+    <div class="container">
+      <div class="row align-items-stretch no-gutters contact-wrap justify-content-center">
+        <div class="col-md-8">
+          <div class="form h-100">
+            <form class="mb-5" action="" method="POST" enctype="multipart/form-data" name="contactForm"  id="personForm" >
+            {% csrf_token %}
+            {% for feild in form %}
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="" class="col-form-label">{{feild.label}}</label><br>
+                  {{feild}}
+                </div>
+              </div>
+            {% endfor %}
+
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="submit" value="Submit" class="btn btn-success py-2 px-4">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+
+    
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <!-- End Form Add Items -->
+{% endblock %}

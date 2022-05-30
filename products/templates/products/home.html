@@ -1,0 +1,163 @@
+{% extends 'main.html'%}
+{% load static %}
+{% block content %}
+ <section id="center" class="clearfix center_home">
+    <div class="container">
+     <div class="row">
+      <div class="center_home_1 clearfix">
+       <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                     <div class="col-sm-6">
+                      <div class="center_home_l clearfix">
+                       <h4 class="mgt">World Best Quality</h4>
+                       <h1>Online AgriInputs Available </h1>
+                       <hr>
+                       <p>Sell Agricultural Products and Machinery Online at AgriDuniya Platform. We Offering broad range of Seeds, Plant Nutrition, Plant Protection and Agri Implements.</p>
+                       <h5 class="normal"><a class="button" href="#">Shopping Now</a></h5>
+                      </div>
+                     </div>     
+                     <div class="col-sm-6">
+                      <div class="center_home_r clearfix">
+                       <img src="{% static 'img/s1.jpg'%}" class="iw" alt="abc">
+                      </div>
+                     </div>           
+                    </div>
+                    <div class="item">
+                     <div class="col-sm-6">
+                      <div class="center_home_l clearfix">
+                       <h4 class="mgt">World Best Quality</h4>
+                       <h1>Online AgriProducts Available</h1>
+                       <hr>
+                       <p>Buy Agricultural Products and Machinery Online at AgriDuniya Platform. We Offering broad range of Seeds, Plant Nutrition, Plant Protection and Agri Implements.</p>
+                       <h5 class="normal"><a class="button" href="#">Shopping Now</a></h5>
+                      </div>
+                     </div>     
+                     <div class="col-sm-6">
+                      <div class="center_home_r clearfix">
+                       <img src="{% static 'img/s2.jpg' %}" class="iw" alt="abc">
+                      </div>
+                     </div>           
+                    </div>
+                </div>
+            </div>
+      <div class="sell_1 clearfix">
+                
+                <div class="col-sm-12">
+                    <!-- Controls -->
+                    <div class="controls text-center">
+                       <a href="#carousel-example" data-slide="prev"> <i class="fa-solid fa-chevron-left  btn-success"></i></a>
+                       <a href="#carousel-example" data-slide="next"> <i class="fa-solid fa-chevron-right  btn-success"></i></a>
+                        <!-- <a class="fa-solid fa-chevron-left btn btn-success" href="#carousel-example" data-slide="prev"></a> -->
+                        <!-- <a class="right fa fa-chevron-right btn btn-success" href="#carousel-example" data-slide="next"></a> -->
+                    </div>
+                </div>
+            </div>
+      </div>
+     </div>
+    </div>
+    </section>
+    
+    <section id="Categ">
+     <div class="container">
+      <div class="row">
+       <div class="Categ_1 clearfix">
+        <div class="col-sm-12">
+         <h3 class="mgt">Popular Categories</h3>
+        <hr>
+        </div>
+       </div>
+       <div class="Categ_2 clearfix">
+        {% for i in cat %}
+        <div class="col-sm-4">
+         <div class="Categ_2i clearfix">
+          <a href=""><img src="{{i.cat_img.url}}" alt="abc" style=" border-radius: 50%; width: 150px; height: 150px;"></a>
+          <br>
+          <h4 class="mgt"><a href="">{{i.name}}</a></h4>
+          
+         </div>
+        </div>
+        {% endfor %}
+
+
+        
+       </div>
+     
+      </div>
+     </div>
+    </section>
+    
+    
+    
+    
+    <section id="categories">
+     <div class="container">
+      <div class="row">
+      
+        <div class="col-lg-6 md-6 sm-12 ">
+         <img src="{% static 'img/digital.png'%}" alt="" width = "100%" height="auto">
+         <hr>
+        </div>
+        <div class="col-lg-6 md-6 sm-12 ">
+            <h2 style="margin-top: 10rem;">Agri Duniya </h2>
+            <h4 style="margin-top: 1rem;">Online Agricultural Products</h4>
+            <p style="word-spacing: 2px; text-align: justify;">Sell Agricultural Products and Machinery Online at AgriDuniya Platform. We Offering broad range of Seeds, Plant Nutrition, Plant Protection and Agri Implements.<br> An easy-to-use farm management software designed to support farmers in making precise agronomic decisions based on real-time field insights and simplifying farm administration.</p>
+        </div>
+       
+    
+    
+       </div>
+      </div> 
+    
+    </section>
+    
+    
+    <section id="connect" class="clearfix">
+     <div class="container">
+      <div class="row">
+       <div class="col-sm-12 space_all">
+        <div class="connect_1 clearfix">
+         <div class="col-sm-3 connect_1m">
+          <div class="connect_1l clearfix">
+            <span><i class="fa fa-truck"></i></span>
+          </div>
+          <div class="connect_1r clearfix">
+           <h4>Free Shipping</h4>
+           <p>Free shipping world wide</p>
+          </div>
+         </div>
+         <div class="col-sm-3 connect_1m">
+          <div class="connect_1l clearfix">
+            <span><i class="fa fa-headphones"></i></span>
+          </div>
+          <div class="connect_1r clearfix">
+           <h4>Support 24/7</h4>
+           <p>Contact us 24 hours a day</p>
+          </div>
+         </div>
+         <div class="col-sm-3 connect_1m">
+          <div class="connect_1l clearfix">
+            <span><i class="fa fa-credit-card"></i></span>
+          </div>
+          <div class="connect_1r clearfix">
+           <h4>Secure Payments</h4>
+           <p>100% payment protection</p>
+          </div>
+         </div>
+         <div class="col-sm-3 connect_1m border_none">
+          <div class="connect_1l clearfix">
+            <span><i class="fa fa-shopping-cart"></i></span>
+          </div>
+          <div class="connect_1r clearfix">
+           <h4>Easy Return</h4>
+           <p>Simple returns policy</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    {% endblock %}

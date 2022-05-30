@@ -1,0 +1,11 @@
+.custom-dropdown .dropdown-item {
+    font-size: 14px;
+    color: #888;
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right:5px;
+    padding-bottom: 10px;
+    position: relative; }
+.custom-dropdown{
+    margin-left: 2rem;
+}
